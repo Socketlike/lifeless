@@ -1,7 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  hi! my name is <span v-tooltip="'or alternatively, Evelyn'">Evie</span>.<br />
+  <div class="primary">hi! i'm <span v-tooltip="'or alternatively, Evelyn'">Evie</span>.</div>
+  <br />
   i specialize in doing silly stuff on my (really really underpowered) laptop, for example:
   <ul>
     <li>

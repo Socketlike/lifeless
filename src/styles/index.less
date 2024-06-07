@@ -1,4 +1,178 @@
-@import './classes/_index';
-@import './elements/_index';
-@import './pages/_index';
-@import './themes/_index';
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  color: white;
+
+  background-image: url('assets/milad-fakurian-u8Jn2rzYIps-unsplash.jpg');
+  background-size: cover;
+
+  font-family: Inter;
+  font-weight: 500;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  > .header {
+    display: flex;
+
+    padding: 10px;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    opacity: 0;
+
+    animation: 1s linear reveal;
+
+    animation-fill-mode: forwards;
+
+    > * {
+      background-color: transparent;
+      border-radius: 8px;
+      box-shadow: 0 0 30px 0 #000;
+
+      height: 100%;
+      padding: 10px;
+    }
+
+    > .text {
+      font-size: 20px;
+      font-weight: 800;
+
+      scale: 1;
+
+      transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: 0 0 50px 0 #000;
+      }
+    }
+
+    > .links {
+      display: flex;
+      gap: 8px;
+
+      scale: 1;
+
+      transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: 0 0 50px 0 #000;
+      }
+    }
+  }
+
+  > .content {
+    padding: 0 16px;
+
+    text-shadow: 4px 4px 24px #000;
+
+    font-size: 16px;
+
+    animation: reveal 1s linear 2s;
+
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+
+    .primary {
+      font-size: 42px;
+      font-weight: 800;
+    }
+
+    > .secondary {
+      font-size: 12px;
+      font-weight: 800;
+
+      color: lightslategray;
+    }
+  }
+
+  > .footer {
+    position: absolute;
+    bottom: 4px;
+
+    display: flex;
+
+    width: calc(100vw - 36px);
+
+    padding: 10px;
+
+    justify-content: space-between;
+
+    animation: 1s linear 1s reveal;
+
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+
+    > .text {
+      font-size: 16px;
+      font-weight: 800;
+
+      scale: 1;
+
+      transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: 0 0 50px 0 #000;
+      }
+    }
+
+    > .links {
+      display: flex;
+      gap: 8px;
+
+      scale: 1;
+
+      transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: 0 0 50px 0 #000;
+      }
+    }
+
+    > * {
+      background-color: transparent;
+      border-radius: 8px;
+      box-shadow: 0 0 30px 0 #000;
+      height: 100%;
+      padding: 10px;
+    }
+  }
+
+  a {
+    color: cadetblue;
+    text-decoration: none;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
+}
+
+.red {
+  color: palevioletred;
+}
+
+.v-popper--has-tooltip {
+  text-decoration: underline;
+  text-decoration-color: lightslategray;
+}

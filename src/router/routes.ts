@@ -4,7 +4,7 @@ export default [
   {
     path: '/:path(.*)*',
     name: '404',
-    component: () => import('@/views/NotFoundView.vue'),
+    component: () => HomeView, // import('@/views/NotFoundView.vue'),
   },
   {
     path: '/',
@@ -14,32 +14,32 @@ export default [
   {
     path: '/test/styling',
     name: 'styling test',
-    component: () => import('@/views/StylingTestView.vue'),
+    component: () => HomeView, // import('@/views/StylingTestView.vue'),
   },
   {
     path: '/config',
     name: 'config',
-    component: () => import('@/views/ConfigView.vue'),
+    component: () => HomeView, // import('@/views/ConfigView.vue'),
   },
   {
     path: '/replugged',
     name: 'replugged',
-    component: () => import('@/views/RepluggedView.vue'),
+    component: () => HomeView, // import('@/views/RepluggedView.vue'),
   },
   {
     path: '/shelter',
     name: 'shelter',
-    component: () => import('@/views/ShelterView.vue'),
+    component: () => HomeView, // import('@/views/ShelterView.vue'),
   },
   {
     path: '/shelter/plugins',
     name: 'shelter plugins',
-    component: () => import('@/views/ShelterPluginsView.vue'),
+    component: () => HomeView, // import('@/views/ShelterPluginsView.vue'),
   },
   {
     path: '/entries/:entry(.*)?',
     name: 'entries',
-    component: () => import('@/views/EntriesView.vue'),
+    component: () => HomeView, // import('@/views/EntriesView.vue'),
   },
 ]
 
