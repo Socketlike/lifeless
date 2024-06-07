@@ -42,9 +42,6 @@ import { hidden as hiddenRoutes } from '@/router/routes'
 
     <div class="links">
       <a href="https://github.com/Socketlike/socketlike.github.io">github</a>
-      <a href="https://unsplash.com/photos/blue-and-white-abstract-painting-u8Jn2rzYIps"
-        >background</a
-      >
     </div>
   </div>
 </template>
