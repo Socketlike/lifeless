@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import { plugin as markdown, Mode } from 'vite-plugin-markdown'
 
 export default defineConfig({
-  base: './',
+  base: '/lifeless',
 
   plugins: [
     vue(),
