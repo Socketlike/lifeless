@@ -1,3 +1,5 @@
+/* will organize later */
+
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -57,7 +59,7 @@ body {
       transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
 
       &:hover {
-        scale: 1.1;
+        scale: 0.9;
         box-shadow: 0 0 50px 0 #000;
       }
     }
@@ -71,7 +73,7 @@ body {
       transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
 
       &:hover {
-        scale: 1.1;
+        scale: 0.9;
         box-shadow: 0 0 50px 0 #000;
       }
     }
@@ -130,7 +132,7 @@ body {
       transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
 
       &:hover {
-        scale: 1.1;
+        scale: 0.9;
         box-shadow: 0 0 50px 0 #000;
       }
     }
@@ -144,7 +146,7 @@ body {
       transition: scale cubic-bezier(0.57, -0.37, 0.43, 1.38) 0.2s;
 
       &:hover {
-        scale: 1.1;
+        scale: 0.9;
         box-shadow: 0 0 50px 0 #000;
       }
     }
@@ -175,4 +177,20 @@ body {
 .v-popper--has-tooltip {
   text-decoration: underline;
   text-decoration-color: lightslategray;
+}
+
+.v-popper__wrapper {
+  .v-popper__inner {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    box-shadow: 0 0 50px 0 #000;
+  }
+
+  .v-popper__arrow-container {
+    color: rgba(0, 0, 0, 0.5);
+
+    .v-popper__arrow-outer {
+      border-color: rgba(0, 0, 0, 0.5);
+    }
+  }
 }
