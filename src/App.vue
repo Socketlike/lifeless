@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import RouterLink from '@/components/RouterLink.vue'
+import { RouterLink, RouterView } from 'vue-router'
 import { hidden as hiddenRoutes } from '@/router/routes'
 </script>
 

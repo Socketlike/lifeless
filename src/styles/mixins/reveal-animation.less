@@ -1,0 +1,13 @@
+.add-reveal-animation(@time: 1s, @delay: 0s) {
+  @keyframes reveal {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: @time linear @delay reveal;
+
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+}

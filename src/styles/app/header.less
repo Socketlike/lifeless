@@ -1,0 +1,49 @@
+@import (reference) '../extensions/ui-hover-react.less';
+@import (reference) '../mixins/reveal-animation.less';
+
+@media screen and (width <= 768px) {
+  #app > .header {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+#app > .header {
+  display: flex;
+
+  padding: 10px;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  .add-reveal-animation();
+
+  > * {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: max-content;
+    height: 100%;
+    padding: 10px;
+
+    border-radius: 4px;
+
+    box-shadow: 0 0 5px 0 #000;
+  }
+
+  > .text {
+    font-size: 20px;
+    font-weight: 800;
+
+    &:extend(.ui-hover-react);
+  }
+
+  > .links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    &:extend(.ui-hover-react);
+  }
+}

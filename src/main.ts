@@ -10,7 +10,6 @@ import SectionBlock from './components/SectionBlock.vue'
 
 import router from './router'
 import * as util from './util'
-import { getTheme, applyTheme } from './util/theme'
 
 interface CustomWindow extends Window {
   util: typeof util
@@ -19,8 +18,6 @@ interface CustomWindow extends Window {
 declare const window: CustomWindow
 
 window.util = util
-
-applyTheme(getTheme())
 
 const app = createApp(App)
 
